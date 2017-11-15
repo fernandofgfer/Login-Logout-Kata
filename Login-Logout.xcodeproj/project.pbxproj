@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5C4F6A511FBC9380007753DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F6A501FBC9380007753DA /* AppDelegate.swift */; };
-		5C4F6A531FBC9380007753DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F6A521FBC9380007753DA /* ViewController.swift */; };
 		5C4F6A561FBC9380007753DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4F6A541FBC9380007753DA /* Main.storyboard */; };
 		5C4F6A581FBC9380007753DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C4F6A571FBC9380007753DA /* Assets.xcassets */; };
 		5C4F6A5B1FBC9380007753DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4F6A591FBC9380007753DA /* LaunchScreen.storyboard */; };
 		5C4F6A661FBC9380007753DA /* Login_LogoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F6A651FBC9380007753DA /* Login_LogoutTests.swift */; };
 		5C4F6A711FBC9380007753DA /* Login_LogoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F6A701FBC9380007753DA /* Login_LogoutUITests.swift */; };
+		5C4F6A7F1FBC9AA8007753DA /* ValidateEmailPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F6A7E1FBC9AA8007753DA /* ValidateEmailPassword.swift */; };
+		5C4F6A811FBC9B61007753DA /* ValidateEmailPasswordTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F6A801FBC9B61007753DA /* ValidateEmailPasswordTest.swift */; };
+		5C4F6A851FBC9CDF007753DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F6A841FBC9CDF007753DA /* LoginViewController.swift */; };
+		5C4F6A871FBC9E2F007753DA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F6A861FBC9E2F007753DA /* LoginPresenter.swift */; };
+		5C4F6A8A1FBCA0A8007753DA /* ValidateEmailPasswordTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F6A801FBC9B61007753DA /* ValidateEmailPasswordTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		5C4F6A4D1FBC9380007753DA /* Login-Logout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Login-Logout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4F6A501FBC9380007753DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C4F6A521FBC9380007753DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5C4F6A551FBC9380007753DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C4F6A571FBC9380007753DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C4F6A5A1FBC9380007753DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,10 @@
 		5C4F6A6C1FBC9380007753DA /* Login-LogoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Login-LogoutUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4F6A701FBC9380007753DA /* Login_LogoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_LogoutUITests.swift; sourceTree = "<group>"; };
 		5C4F6A721FBC9380007753DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C4F6A7E1FBC9AA8007753DA /* ValidateEmailPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateEmailPassword.swift; sourceTree = "<group>"; };
+		5C4F6A801FBC9B61007753DA /* ValidateEmailPasswordTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateEmailPasswordTest.swift; sourceTree = "<group>"; };
+		5C4F6A841FBC9CDF007753DA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5C4F6A861FBC9E2F007753DA /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +104,9 @@
 		5C4F6A4F1FBC9380007753DA /* Login-Logout */ = {
 			isa = PBXGroup;
 			children = (
-				5C4F6A501FBC9380007753DA /* AppDelegate.swift */,
-				5C4F6A521FBC9380007753DA /* ViewController.swift */,
-				5C4F6A541FBC9380007753DA /* Main.storyboard */,
-				5C4F6A571FBC9380007753DA /* Assets.xcassets */,
-				5C4F6A591FBC9380007753DA /* LaunchScreen.storyboard */,
-				5C4F6A5C1FBC9380007753DA /* Info.plist */,
+				5C4F6A891FBCA07B007753DA /* Others */,
+				5C4F6A881FBC9E32007753DA /* Login */,
+				5C4F6A7E1FBC9AA8007753DA /* ValidateEmailPassword.swift */,
 			);
 			path = "Login-Logout";
 			sourceTree = "<group>";
@@ -112,6 +116,7 @@
 			children = (
 				5C4F6A651FBC9380007753DA /* Login_LogoutTests.swift */,
 				5C4F6A671FBC9380007753DA /* Info.plist */,
+				5C4F6A801FBC9B61007753DA /* ValidateEmailPasswordTest.swift */,
 			);
 			path = "Login-LogoutTests";
 			sourceTree = "<group>";
@@ -123,6 +128,27 @@
 				5C4F6A721FBC9380007753DA /* Info.plist */,
 			);
 			path = "Login-LogoutUITests";
+			sourceTree = "<group>";
+		};
+		5C4F6A881FBC9E32007753DA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5C4F6A861FBC9E2F007753DA /* LoginPresenter.swift */,
+				5C4F6A841FBC9CDF007753DA /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5C4F6A891FBCA07B007753DA /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				5C4F6A501FBC9380007753DA /* AppDelegate.swift */,
+				5C4F6A541FBC9380007753DA /* Main.storyboard */,
+				5C4F6A571FBC9380007753DA /* Assets.xcassets */,
+				5C4F6A591FBC9380007753DA /* LaunchScreen.storyboard */,
+				5C4F6A5C1FBC9380007753DA /* Info.plist */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C4F6A531FBC9380007753DA /* ViewController.swift in Sources */,
+				5C4F6A871FBC9E2F007753DA /* LoginPresenter.swift in Sources */,
 				5C4F6A511FBC9380007753DA /* AppDelegate.swift in Sources */,
+				5C4F6A851FBC9CDF007753DA /* LoginViewController.swift in Sources */,
+				5C4F6A8A1FBCA0A8007753DA /* ValidateEmailPasswordTest.swift in Sources */,
+				5C4F6A7F1FBC9AA8007753DA /* ValidateEmailPassword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C4F6A661FBC9380007753DA /* Login_LogoutTests.swift in Sources */,
+				5C4F6A811FBC9B61007753DA /* ValidateEmailPasswordTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
