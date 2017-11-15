@@ -8,8 +8,11 @@
 
 import Foundation
 
+//Change name a View
 protocol LoginProtocol: class{
     func setButtonStatus(isEnabled: Bool)
+    func showErrorPass()
+    func showSuccessPass()
 }
 
 class LoginPresenter: NSObject{
@@ -18,10 +21,12 @@ class LoginPresenter: NSObject{
     var user: String! = ""
     var pass: String! = ""
     var validator: ValidateEmailPassword!
+    var loginServer: LoginServer!
     
     init(view: LoginProtocol){
         self.view = view
         validator = ValidateEmailPassword()
+        loginServer = LoginServer()
     }
     
     func setUser(user: String){
@@ -38,4 +43,11 @@ class LoginPresenter: NSObject{
         validator.validate(email: user, password: pass) ? view.setButtonStatus(isEnabled: true) : view.setButtonStatus(isEnabled: false)
     }
     
+    func loginPressed(){
+        checkPass()
+    }
+    
+    func checkPass(){
+        loginServer.validatePassword(pass: pass) ? view.showErrorPass() : view.showSuccessPass()
+    }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, LoginProtocol{
+class LoginViewController: UIViewController{
     
     @IBOutlet var userTextField: UITextField!
     @IBOutlet var passTextField: UITextField!
@@ -19,21 +19,37 @@ class LoginViewController: UIViewController, LoginProtocol{
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = LoginPresenter(view: self)
-        
+        setUpView()
+    }
+    
+    fileprivate func setUpView() {
         userTextField.addTarget(self, action: #selector(textFieldDidChange),
-                            for: UIControlEvents.editingChanged)
+                                for: UIControlEvents.editingChanged)
         passTextField.addTarget(self, action: #selector(textFieldDidChange),
                                 for: UIControlEvents.editingChanged)
+        logInButton.addTarget(self, action: #selector(loginPressed), for: .touchDown)
         setButtonStatus(isEnabled: false)
     }
-
+    
     @objc func textFieldDidChange(){
         presenter.setUser(user: userTextField.text ?? "")
         presenter.setPass(pass: passTextField.text ?? "")
     }
+    
+    @objc func loginPressed(){
+        presenter.loginPressed()
+    }
 }
 
-extension LoginViewController{
+extension LoginViewController: LoginProtocol{
+    func showErrorPass() {
+        print("Wrong pass")
+    }
+    
+    func showSuccessPass() {
+        print("Success pass")
+    }
+    
     func setButtonStatus(isEnabled: Bool) {
         logInButton.isEnabled = isEnabled
     }

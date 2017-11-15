@@ -13,9 +13,20 @@ class LoginPresenterSpy: LoginProtocol{
     
     var setButtonStatusCalled = false
     var statusButton = false
+    var showErrorPassCalled = false
+    var showSuccessPassCalled = false
     
     func setButtonStatus(isEnabled: Bool) {
         setButtonStatusCalled = true
         statusButton = isEnabled
-    }  
+    }
+    
+    func showErrorPass() {
+        showErrorPassCalled = true
+    }
+    
+    func showSuccessPass() {
+        showSuccessPassCalled = true
+    }
+    
 }
