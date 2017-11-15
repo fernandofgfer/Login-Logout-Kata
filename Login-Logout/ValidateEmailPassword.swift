@@ -10,12 +10,11 @@ import Foundation
 
 
 class ValidateEmailPassword: NSObject{
-
+    
     func validate(email: String, password: String) -> Bool{
         if email.isEmpty || password.isEmpty{
             return false
         }
         return true
     }
-    
 }

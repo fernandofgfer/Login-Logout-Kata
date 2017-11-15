@@ -17,7 +17,8 @@
 		5C4F6A811FBC9B61007753DA /* ValidateEmailPasswordTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F6A801FBC9B61007753DA /* ValidateEmailPasswordTest.swift */; };
 		5C4F6A851FBC9CDF007753DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F6A841FBC9CDF007753DA /* LoginViewController.swift */; };
 		5C4F6A871FBC9E2F007753DA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F6A861FBC9E2F007753DA /* LoginPresenter.swift */; };
-		5C4F6A8A1FBCA0A8007753DA /* ValidateEmailPasswordTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F6A801FBC9B61007753DA /* ValidateEmailPasswordTest.swift */; };
+		5C4F6A8C1FBCA20B007753DA /* LoginPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F6A8B1FBCA20B007753DA /* LoginPresenterTest.swift */; };
+		5C4F6A8F1FBCA581007753DA /* LoginPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F6A8E1FBCA581007753DA /* LoginPresenterSpy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		5C4F6A801FBC9B61007753DA /* ValidateEmailPasswordTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateEmailPasswordTest.swift; sourceTree = "<group>"; };
 		5C4F6A841FBC9CDF007753DA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5C4F6A861FBC9E2F007753DA /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		5C4F6A8B1FBCA20B007753DA /* LoginPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTest.swift; sourceTree = "<group>"; };
+		5C4F6A8E1FBCA581007753DA /* LoginPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterSpy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,11 @@
 		5C4F6A4F1FBC9380007753DA /* Login-Logout */ = {
 			isa = PBXGroup;
 			children = (
+				5C4F6A501FBC9380007753DA /* AppDelegate.swift */,
+				5C4F6A541FBC9380007753DA /* Main.storyboard */,
+				5C4F6A571FBC9380007753DA /* Assets.xcassets */,
+				5C4F6A591FBC9380007753DA /* LaunchScreen.storyboard */,
+				5C4F6A5C1FBC9380007753DA /* Info.plist */,
 				5C4F6A891FBCA07B007753DA /* Others */,
 				5C4F6A881FBC9E32007753DA /* Login */,
 				5C4F6A7E1FBC9AA8007753DA /* ValidateEmailPassword.swift */,
@@ -114,6 +122,7 @@
 		5C4F6A641FBC9380007753DA /* Login-LogoutTests */ = {
 			isa = PBXGroup;
 			children = (
+				5C4F6A8D1FBCA212007753DA /* Login */,
 				5C4F6A651FBC9380007753DA /* Login_LogoutTests.swift */,
 				5C4F6A671FBC9380007753DA /* Info.plist */,
 				5C4F6A801FBC9B61007753DA /* ValidateEmailPasswordTest.swift */,
@@ -142,13 +151,17 @@
 		5C4F6A891FBCA07B007753DA /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				5C4F6A501FBC9380007753DA /* AppDelegate.swift */,
-				5C4F6A541FBC9380007753DA /* Main.storyboard */,
-				5C4F6A571FBC9380007753DA /* Assets.xcassets */,
-				5C4F6A591FBC9380007753DA /* LaunchScreen.storyboard */,
-				5C4F6A5C1FBC9380007753DA /* Info.plist */,
 			);
 			path = Others;
+			sourceTree = "<group>";
+		};
+		5C4F6A8D1FBCA212007753DA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5C4F6A8B1FBCA20B007753DA /* LoginPresenterTest.swift */,
+				5C4F6A8E1FBCA581007753DA /* LoginPresenterSpy.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +301,6 @@
 				5C4F6A871FBC9E2F007753DA /* LoginPresenter.swift in Sources */,
 				5C4F6A511FBC9380007753DA /* AppDelegate.swift in Sources */,
 				5C4F6A851FBC9CDF007753DA /* LoginViewController.swift in Sources */,
-				5C4F6A8A1FBCA0A8007753DA /* ValidateEmailPasswordTest.swift in Sources */,
 				5C4F6A7F1FBC9AA8007753DA /* ValidateEmailPassword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +310,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C4F6A661FBC9380007753DA /* Login_LogoutTests.swift in Sources */,
+				5C4F6A8C1FBCA20B007753DA /* LoginPresenterTest.swift in Sources */,
 				5C4F6A811FBC9B61007753DA /* ValidateEmailPasswordTest.swift in Sources */,
+				5C4F6A8F1FBCA581007753DA /* LoginPresenterSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,6 @@ protocol LoginProtocol: class{
     func setButtonStatus(isEnabled: Bool)
 }
 
-
 class LoginPresenter: NSObject{
     
     weak var view: LoginProtocol!
